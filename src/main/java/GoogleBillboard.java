@@ -8,10 +8,17 @@ public class GoogleBillboard {
       				break;
     			}
   		}
+
+		/*int count = 0;
+  		for (int i = 0; i < e.length() - 9; i++){
+   			int sum = 0;
+    			for (int j = i; j < i + 10; j++) sum += Double.parseDouble(e.substring(j, j + 1));
+    			if (sum == 49) count++;
+    			if (count == 5) System.out.println(Double.parseDouble(e.substring(i, i + 10)));
+  		}*/
 	}
 	public static boolean isPrime(double d){
-		for (int i = 2; i <= Math.sqrt(d); i++)
-    			if (d % i == 0) return false;
+		for (int i = 2; i <= Math.sqrt(d); i++) if (d % i == 0) return false;
 		return true;
 	}
 
